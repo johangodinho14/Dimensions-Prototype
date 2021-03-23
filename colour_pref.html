@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIndependent</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/png" href="./images/logo.PNG"/>
+</head>
+<body>
+    <img src="./images/full-logo.png" class="logo">
+    <div class="container">
+        <div class="sub-container">
+            <h1>BIndependent</h1>
+
+            <div class="ross-container">
+                <img src="./images/ross.png" class="ross">
+                <div class="ross-text-disabled">Hey! I'm Ross, your BIndependent personal assistant. Let's get you started.</div>
+            </div>
+            <div class="ross-container">
+                <img src="./images/ross.png" class="ross">
+                <div class="ross-text"><strong>Step One:</strong><br/>Let's set your preferences</div>
+            </div>
+            <div class="ross-container">
+                <img src="./images/ross.png" class="ross">
+                <div class="ross-text"><strong>Colours:</strong><br/>Here are some colour options, please select which you prefer.</div>
+            </div>
+            <div class="ross-container">
+                <div onclick="update_c_preferences('cool-colours')" class="colour-options" style="border: 1px solid #000;">
+                    <div  class="colour_blocks cool_colours1"> </div><div class="colour_blocks cool_colours2"> </div>
+                </div>
+                <div onclick="update_c_preferences('warm-colours')" class="colour-options" style="border: 1px solid #000;">
+                    <div class="colour_blocks warm_colours1"> </div><div class="colour_blocks warm_colours2"> </div>
+                </div>
+                <div onclick="update_c_preferences('purple-colours')" class="colour-options" style="border: 1px solid #000;">
+                   <div class="colour_blocks purple_colours1"> </div><div class="colour_blocks purple_colours2"> </div>
+                </div>
+                <div onclick="update_c_preferences('blackandwhite-colours')" class="colour-options" style="border: 1px solid #000;">
+                    <div class="colour_blocks bw_colours1"> </div><div class="colour_blocks bw_colours2"> </div>
+                </div>
+            </div>
+            <div class="ross-container">
+                <div class="colour-options">
+                    <p>Cool Colours</p>
+                </div>
+                <div class="colour-options">
+                    <p>Warm Colours</p>
+                </div>
+                <div class="colour-options">
+                    <p>Purple Colours</p>
+                </div>
+                <div class="colour-options">
+                    <p>Black and White</p>
+                </div>
+            </div>
+            <div class="back-container">
+                <a onclick="history.back();" style="width: auto;">
+                    <div class="go_back">
+                        <img src="./images/go_back.png" class="back_icon">Return
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

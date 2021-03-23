@@ -12,21 +12,24 @@
     <img src="./images/full-logo.png" class="logo">
     <div class="container">
         <div class="sub-container">
-            <h1>Welcome to BIndependent</h1>
             
             <div class="ross-container">
                 <img src="./images/ross.png" class="ross">
-                <div class="ross-text">Hey! I'm Ross, your BIndependent personal assistant. Let's get you started.</div>
+                <div class="ross-text">Hmm... it looks like you already have some preferences. Would you like to change them ? </div>
             </div>
             
-            <div class="username-speak-container">
-                <input type="text" id="Username" placeholder="Username" class="username-entry">
-                <span class="speak-button"><img src="https://i.imgur.com/cHidSVu.gif" alt="Speak" onclick="startDictation()"></span></br> 
-            </div>
             <div class="next-button-holder">
-                <button class="next-button" onclick="login();">Next</button>
+                <button class="yes-button" onclick="selectColors();">Yes</button>
+                <button class="no-button"  onclick="categories();">No</button>
             </div>
-            <h3 id="info"></h3>
+            
+            <div class="back-container">
+                <a onclick="history.back();" style="width: auto;">
+                    <div class="go_back">
+                        <img src="./images/go_back.png" class="back_icon">Return
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
