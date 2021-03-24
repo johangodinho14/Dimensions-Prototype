@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIndependent</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/png" href="./images/logo.PNG"/>
+</head>
+
+<body>
+    <img src="./images/full-logo.png" class="logo">
+    <div class="container">
+        <div class="sub-container">
+            <h1>BIndependent</h1>
+
+            <div class="ross-container">
+                <img src="./images/ross.png" class="ross">
+                <div class="ross-text" style="color: #ccc;">Well done on selecting your colour preferences!</div>
+            </div>
+           <!-- <div class="ross-container">
+                <img src="./images/ross.png" class="ross">
+                <div class="ross-text"><strong>Step Two:</strong><br/>Let's set your font preferences</div>
+            </div>-->
+            <div class="ross-container">
+                <img src="./images/ross.png" class="ross">
+                <div class="ross-text"><strong>Colours:</strong><br/>Select a font size that you like </div>
+            </div>
+            <div class="ross-container">
+                <button onclick="update_f_preferences('none')" class="font-size-button">Default</button>
+                <button onclick="update_f_preferences('21px')" class="font-size-button" style="font-size: 20px;">20%</button>
+                <button onclick="update_f_preferences('25px')" class="font-size-button" style="font-size: 30px;">30%</button>
+                <button onclick="update_f_preferences('30px')" class="font-size-button" style="font-size: 40px;">40%</button>
+            </div>
+            <div class="next-button-holder" style="padding-top: 15px;">
+                <a href="categories.html"><button class="next-button">Next</button></a>
+            </div>
+            <div class="back-container">
+                <a onclick="history.back();" style="width: auto;">
+                    <div class="go_back">
+                        <img src="./images/go_back.png" class="back_icon">Return
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

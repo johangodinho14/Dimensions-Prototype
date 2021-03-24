@@ -39,14 +39,7 @@ input:focus,button{
 }
 .ross-text{
     text-align: left;
-    width: 170px;
-    margin-top: 38px;
-    margin-left: -30px;
-}
-.ross-text-disabled {
-    color: #ccc;
-    text-align: left;
-    width: 170px;
+    width: 90%;
     margin-top: 38px;
     margin-left: -30px;
 }
@@ -79,6 +72,17 @@ input:focus,button{
     margin-left: 10px;
     cursor:pointer;
 }
+.font-size-button{
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    box-shadow: 10px 5px 5px #C3C3C3;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
 .speak-button{
     margin-top: 5px;
     cursor:pointer;
@@ -102,6 +106,7 @@ h1{
 .colour_blocks {
     width: 100%;
     height: 35px;
+    cursor: pointer;
 }
 a {
     width: 100%;
@@ -134,8 +139,8 @@ a {
 .hp_squares {
     padding: 15px;
     margin: 4px;
-    width: 200px;
-    height: 170px;
+    width: 40%;
+    height: 350px;
     cursor:pointer;
     box-shadow: 10px 5px 5px #C3C3C3;
 }
@@ -168,11 +173,66 @@ a {
 .quiz_squares {
     padding: 15px;
     margin: 4px;
-    width: 200px;
-    height: 170px;
+    width: 40%;
+    height: 310px;
     cursor:pointer;
     box-shadow: 10px 5px 5px #C3C3C3;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.fa-star {
+    color: green;
+    font-size: 1.5rem;
+    animation-name: starAnimation;
+    animation-duration: 5000ms;
+    animation-iteration-count: 2; 
+    animation-timing-function: linear; 
+}
+@keyframes starAnimation { 
+    0% { 
+        transform:rotate(0deg);
+    } 
+    100% { 
+        transform:rotate(360deg); 
+     } 
+}
+.ross-text-wide {
+    width: 450px;
+}
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+    .hp_squares {
+        padding: 10px;
+        margin: 2px;
+        width: 46%;
+        height: 260px;
+    }
+    .quiz_squares {
+        padding: 10px;
+        margin: 2px;
+        width: 46%;
+        height: 230px;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .container {
+        width: 90%;
+    }
+    .hp_squares {
+        padding: 5px;
+        margin: 2px;
+        width: 45%;
+        height: 170px;
+    }
+    .quiz_squares {
+        padding: 5px;
+        margin: 2px;
+        width: 45%;
+        max-width: 230px;
+        height: 170px;
+    }
+    
 }
